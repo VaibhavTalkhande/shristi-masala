@@ -12,6 +12,7 @@ function App() {
 
   return (
     <>
+    <PatternBackground />
       <Navbar />
       <HeroSection />
       <ProductCategories />

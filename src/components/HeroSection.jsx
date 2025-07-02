@@ -10,8 +10,13 @@ import main from '../assets/image.png';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-screen overflow-hidden m-0 z-0">
-      <img src={main} alt="Main" className="w-full h-screen object-contain object-center select-none" draggable={false} />
+    <section className="relative w-full h-screen min-h-[60vw] overflow-hidden m-0 z-0">
+      <img
+        src={main}
+        alt="Main"
+        className="w-full min-h-[60vw]  object-center select-none sm:h-[60vw] md:h-screen lg:h-screen"
+        draggable={false}
+      />
       {/* <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
