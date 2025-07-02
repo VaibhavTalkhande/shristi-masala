@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import speciality from '../assets/speciality.png';
-import main from '../assets/image.png';
+import main from '../assets/image3.png';
 
 const HeroSection = () => {
   return (

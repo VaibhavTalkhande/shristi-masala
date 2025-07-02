@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { GiChiliPepper } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo3.png';
 import PatternBackground from './PatternBackground';
 
 const Navbar = () => {
@@ -18,11 +18,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
-            <div className="h-full pt-2 overflow-y-hidden flex items-center">
+            <div className="h-full overflow-y-hidden  flex items-center">
               <img 
                 src={logo} 
                 alt="logo" 
-                className="object-contain w-40 h-40 sm:w-40 sm:h-40 md:w-32 md:h-28 lg:w-40 lg:h-40 transition-all duration-300 drop-shadow-md" 
+                className="object-contain w-20 h-20 sm:w-20 sm:h-20 md:w-32 md:h-32 lg:w-32 lg:h-32" 
               />
             </div>
           </a>
