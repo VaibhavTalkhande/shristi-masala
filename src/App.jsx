@@ -6,6 +6,9 @@ import PatternBackground from './components/PatternBackground'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import ProductCategories from './components/ProductCategories'
+import ContactSection from './components/ContactSection'
+import Footer from './components/Footer'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +19,8 @@ function App() {
       <Navbar />
       <HeroSection />
       <ProductCategories />
+      <ContactSection/>
+      <Footer/>
       {/* <ImageCarousel /> */}
     </>
   )
