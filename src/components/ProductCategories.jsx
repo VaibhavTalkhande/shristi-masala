@@ -1,39 +1,48 @@
 import React from 'react';
-import { FaPepperHot, FaLeaf, FaStar, FaMortarPestle } from 'react-icons/fa';
+import { FaAward, FaUtensilSpoon, FaShieldAlt, FaSeedling } from 'react-icons/fa';
+import borderImg from '../assets/border-of-herbs-and-spices.jpg';
 
 const categories = [
   {
-    name: 'Pure Spices',
-    icon: <FaPepperHot className="text-3xl text-red-700" />,
-    description: 'Finest quality single-origin spices for authentic flavor.'
+    name: 'Premium Quality Ingredients',
+    icon: <FaAward className="text-3xl text-[#a10000]" />, // brand red
+    description: 'Only the finest, handpicked spices for unmatched flavor.'
   },
   {
-    name: 'Blended Masalas',
-    icon: <FaMortarPestle className="text-3xl text-yellow-700" />,
-    description: 'Traditional and modern blends for every Indian recipe.'
+    name: 'Convenience in Cooking',
+    icon: <FaUtensilSpoon className="text-3xl text-[#a10000]" />, // brand red
+    description: 'Easy-to-use blends that save time and enhance taste.'
   },
   {
-    name: 'Special Blends',
-    icon: <FaStar className="text-3xl text-amber-500" />,
-    description: 'Signature mixes crafted for unique taste experiences.'
+    name: 'Certified and Safe',
+    icon: <FaShieldAlt className="text-3xl text-[#a10000]" />,
+    description: 'Quality assured, certified, and safe for your family.'
   },
   {
-    name: 'Premium Masalas',
-    icon: <FaLeaf className="text-3xl text-green-700" />,
-    description: 'Handpicked, high-grade masalas for gourmet cooking.'
+    name: 'Hygienic Processing',
+    icon: <FaSeedling className="text-3xl text-[#a10000]" />,
+    description: 'Processed and packed in the most hygienic conditions.'
   }
 ];
 
 const ProductCategories = () => (
-  <section className="py-16 bg-gradient-to-b from-white to-yellow-50">
+  <section className="py-16 bg-[#fff8e1] relative">
     <div className="max-w-6xl mx-auto px-4">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-red-900 mb-10 tracking-tight">Our Masala Categories</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        {categories.map((cat) => (
-          <div key={cat.name} className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center hover:scale-105 transition-transform border-t-4 border-red-700">
-            <div className="mb-4">{cat.icon}</div>
-            <h3 className="text-xl font-semibold text-red-800 mb-2">{cat.name}</h3>
-            <p className="text-gray-600 text-center text-sm">{cat.description}</p>
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-[#a10000] mb-10 tracking-tight font-serif italic drop-shadow">Why Choose Us?</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {categories.map((cat, idx) => (
+          <div key={cat.name} className="relative flex items-center gap-4 bg-[#a10000] rounded-2xl shadow-xl p-6 md:p-8 border-4 border-transparent hover:scale-105 transition-transform">
+            {/* Decorative border image */}
+            <img src={borderImg} alt="herb border" className="absolute inset-0 w-full h-full object-cover rounded-2xl opacity-20 pointer-events-none z-0" />
+            {/* Icon */}
+            <div className="relative z-10 flex-shrink-0 w-16 h-16 flex items-center justify-center rounded-full bg-white border-2 border-[#e0d53c] shadow-lg mr-4">
+              {cat.icon}
+            </div>
+            {/* Text */}
+            <div className="relative z-10 flex-1">
+              <h3 className="text-lg md:text-xl font-bold text-white mb-1 font-sans">{cat.name}</h3>
+              <p className="text-white text-base md:text-lg font-medium">{cat.description}</p>
+            </div>
           </div>
         ))}
       </div>

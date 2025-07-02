@@ -6,11 +6,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import speciality from '../assets/speciality.png';
-import main from '../assets/image3.png';
+import main from '../assets/image2.png';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-screen min-h-[60vw] overflow-hidden m-0 z-0">
+    <section className="relative w-full bg-white pt-5 sm:h-screen min-h-[60vw] overflow-hidden m-0 z-0">
       <img
         src={main}
         alt="Main"

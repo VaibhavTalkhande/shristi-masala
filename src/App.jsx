@@ -9,6 +9,8 @@ import ProductCategories from './components/ProductCategories'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import logo from './assets/logo3.png'
+import CarouselSection from './components/CarouselSection'
+import CompanyHistorySection from './components/CompanyHistorySection'
 
 
 const App = () => {
@@ -35,6 +37,8 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <ProductCategories />
+      <CarouselSection/>
+      <CompanyHistorySection/>
       <ContactSection/>
       <Footer/>
       {/* <ImageCarousel /> */}
