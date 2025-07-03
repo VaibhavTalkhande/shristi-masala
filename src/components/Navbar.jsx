@@ -13,16 +13,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full bg-white p-1 z-50 h-24 shadow-md sticky top-0 transition-all duration-300">
+    <nav className="w-full bg-white sm:p-1 z-50 px-1 h-16 sm:h-24 shadow-md sticky top-0 transition-all duration-300">
       <div className="container mx-auto  max-w-7xl">
-        <div className="flex justify-between items-center h-24">
+        <div className="flex justify-between items-center h-16 sm:h-24">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
             <div className="h-full overflow-y-hidden  flex items-center">
               <img 
                 src={logo} 
                 alt="logo" 
-                className="object-contain w-20 h-20 sm:w-20 sm:h-20 md:w-32 md:h-32 lg:w-32 lg:h-32" 
+                className="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-32 md:h-32 lg:w-32 lg:h-32" 
               />
             </div>
           </a>
