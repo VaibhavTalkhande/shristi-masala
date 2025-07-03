@@ -21,9 +21,8 @@ const HeroSection = () => {
         <img
           src={main}
           alt="Main"
-          className={`w-full min-h-[60vw]  object-center select-none sm:h-[60vw] md:h-screen lg:h-screen transition-opacity duration-700 ${loaded ? 'opacity-100' : 'opacity-0'}`}
-          onLoad={() => setLoaded(true)}
-          loading="eager"
+          className={`w-full min-h-[60vw]  object-center select-none sm:h-[60vw] md:h-screen lg:h-screen transition-opacity duration-700 `}
+          
         />
       </div>
       {/* <Swiper
